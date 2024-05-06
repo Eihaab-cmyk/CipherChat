@@ -56,4 +56,22 @@ const sendMessage = asyncHandler(async (req, res) => {
   }
 });
 
-module.exports = { allMessages, sendMessage };
+const decryptImage = (encryptedImageData) => {
+  const bytes = CryptoJS.AES.decrypt(encryptedImageData, ENCRYPTION_KEY);
+  const decryptedImageData = bytes.toString(CryptoJS.enc.Utf8);
+  return decryptedImageData;
+};
+
+const uploadImage = asyncHandler(async (req, res) => {
+  const { encryptedImage } = req.body;
+
+  // Decrypt image data
+  const decryptedImageData = decryptImage(encryptedImage);
+
+  // Process and store decrypted image data (e.g., save to MongoDB or cloud storage)
+  // Ensure proper error handling and return the image URL or identifier
+
+  res.json({ imageUrl: "<image_url>" }); // Placeholder for image URL
+});
+
+module.exports = { allMessages, sendMessage, uploadImage };
