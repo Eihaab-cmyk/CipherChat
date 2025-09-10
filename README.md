@@ -7,7 +7,7 @@ The Cipher chat Project is a full-stack web application designed to facilitate r
 ### Features
 
 - User authentication (login and signup)
-- Real-time messaging
+- Real-time messaging through socket.io
 - Group chat creation and management
 - User profile management
 - Responsive design for seamless usage across devices
