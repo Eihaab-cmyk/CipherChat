@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-The PDC_IS_Project is a full-stack web application designed to facilitate real-time chat functionality. It includes a backend built with Node.js and Express, and a frontend developed using React. The application supports user authentication, group chats, and real-time messaging.
+The Cipher chat Project is a full-stack web application designed to facilitate real-time chat functionality. It includes a backend built with Node.js and Express, and a frontend developed using React. The application supports user authentication, group chats, and real-time messaging.
 
 ### Features
 
@@ -58,7 +58,7 @@ The frontend is located in the `frontend` folder and includes the following key 
    ```
 4. Start the backend server:
    ```bash
-   npm start
+   npm run dev
    ```
    The backend server will run on `http://localhost:5000` by default.
 
